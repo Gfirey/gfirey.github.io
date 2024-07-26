@@ -1,0 +1,62 @@
+@font-face {
+   font-family: CormorantInfant;
+   src: url('/font/CormorantInfant-Light.woff') format('woff');
+   font-weight: normal;
+}
+
+@font-face {
+   font-family: CormorantInfant;
+   src: url('/font/CormorantInfant-Bold.woff') format('woff');
+   font-weight: bold;
+}
+
+@font-face {
+   font-family: SaintAmoure;
+   src: url('/font/SaintAmoure.woff') format('woff');
+}
+
+body {
+
+}
+
+.block1 {
+   background-position: center;
+
+   margin: auto;
+   width: 600px;
+   height: 100%;
+}
+
+.rakovina {
+   height: 200px;
+   background-image: url("img/rakovina.png");
+   background-position: center;
+   background-size: 100%;
+   width: 100%;
+}
+
+.text {
+   color: rgb(64, 116, 156);
+   width: 100%;
+   text-align: center;
+   padding-bottom: 15px;
+   font-family: CormorantInfant, sans-serif;
+   line-height: 2em;
+   letter-spacing: 0.3em;
+}
+
+.text_name {
+   font-weight: bold;
+   font-size: 20pt;
+   line-height: inherit;
+   letter-spacing: 0.5em;
+   text-align: center;
+}
+
+.text_amour {
+   font-family: SaintAmoure, sans-serif;
+   font-size: 40pt;
+   line-height: 1em;
+   letter-spacing: 0.1em;
+   text-align: center;
+}
