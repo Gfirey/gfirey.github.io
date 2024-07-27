@@ -5,21 +5,21 @@
    <meta name="viewport"
          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Приглашение на свадьбу</title>
    <link rel="preload" as="font" href="./font/CormorantInfant-Light.woff" type="font/woff2" crossorigin="anonymous">
    <link rel="stylesheet" href="./index.css">
-   <script charset="UTF-8" src="countdown.js"></script>
-   <title>Приглашение на свадьбу</title>
+   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 </head>
 <body>
-   <div class="block1">
-      <div class="rakovina"></div>
+   <div class="block">
+      <div class="rakovina animation"></div>
       <div class="text text_rak">ВМЕСТЕ И НАВСЕГДА</div>
       <div class="text text_name">Павел</div>
       <div class="text text_amour">Love</div>
       <div class="text text_name">Наталья</div>
       <div class="text text_rak">ПРИГЛАШАЕМ ВАС РАЗДЕЛИТЬ<br/>С НАМИ ЭТОТ ВАЖНЫЙ И ТРЕПЕТНЫЙ МОМЕНТ</div>
-      <div class="bereg1">
-         <div class="text text_amour">31 августа 2024 года</div>
+      <div class="text text_amour">31 августа 2024 года</div>
+      <div class="bereg1 animation">
          <div class="text text_rak">16:00, РЕСТОРАН "ПТИЧКИ И ЯГОДЫ"<br/>ПРИМОРСКОЕ ШОССЕ, 572, Г. ЗЕЛЕНОГОРСК</div>
          <div class="text text_name" style="font-size: 16px">ЖДЕМ ВАС!</div>
          <div class="countdown">
@@ -44,8 +44,42 @@
                   <span class="countdown_label">Секунд</span>
                </div>
             </ul>
+            <script charset="UTF-8" src="countdown.js"></script>
          </div>
       </div>
+      <div class="text text_obr">Дорогой Гость!</div>
+      <div class="text text_rak">
+         Представь себе загородный домик у моря, где можно<br/>
+         выйти на пристань, насладиться шумом прибоя,<br/>
+         почувствовать лёгкий бриз...
+      </div>
+      <div class="text text_obr">Мы хотим пригласить Вас разделить эти ощущения вместе!</div>
+      <div class="bereg2"></div>
+      <div class="text text_rak">
+         Будем благодарны, если при выборе нарядов на наше торжество<br/>
+         вы придержитесь следующей палитры
+      </div>
+      <div class="colors">
+         <div class="colors_wr">
+            <div class="color color1"></div>
+            <div class="color color2"></div>
+            <div class="color color3"></div>
+            <div class="color color4"></div>
+            <div class="color color5"></div>
+         </div>
+         <div class="colors_wr">
+            <div class="color color6"></div>
+            <div class="color color7"></div>
+            <div class="color color8"></div>
+            <div class="color color9"></div>
+            <div class="color color10"></div>
+         </div>
+      </div>
+      <div class="text text_rak poll">
+         А ещё для выбора предпочтений в еде и необходимсости траснфера<br/>
+         <a href="https://forms.gle/AFh13rAGxjqEMp5JA" target="_blank">просим заполнить небольшую анкету по ссылке</a></div>
+      <div id="map" class="map"></div>
+      <script charset="UTF-8" src="map.js"></script>
    </div>
 </body>
 </html>
