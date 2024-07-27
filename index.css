@@ -15,16 +15,12 @@
    src: url('/font/SaintAmoure.woff') format('woff');
 }
 
-body {
-
-}
-
 .block1 {
    background-position: center;
-
    margin: auto;
-   width: 600px;
+   max-width: 600px;
    height: 100%;
+   font-family: CormorantInfant, sans-serif;
 }
 
 .rakovina {
@@ -43,6 +39,11 @@ body {
    font-family: CormorantInfant, sans-serif;
    line-height: 2em;
    letter-spacing: 0.3em;
+   animation: d 2.5s 1 cubic-bezier(.215,.61,.355,1) .5s backwards;
+}
+
+.text_rak {
+   font-size: 15px;
 }
 
 .text_name {
@@ -55,8 +56,72 @@ body {
 
 .text_amour {
    font-family: SaintAmoure, sans-serif;
-   font-size: 40pt;
+   font-size: 45pt;
    line-height: 1em;
    letter-spacing: 0.1em;
    text-align: center;
+}
+
+.bereg1 {
+   width: 100%;
+   height: 400px;
+   background-image: url("img/bereg1.png");
+   background-size: cover;
+}
+
+.countdown {
+   height: 120px;
+   width: 300px;
+   margin: auto;
+   margin-top: 40px;
+   border-radius: 10px;
+   background: rgba(255, 255, 255, 0.5);
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+
+.countdown_cell {
+   display: inline-block;
+   font-size: 20px;
+   color: rgb(64, 116, 156);
+   letter-spacing: 0em;
+   line-height: 2.25em;
+   text-align: center;
+}
+
+.countdown_number {
+   font-weight: bold;
+   font-size: 30px;
+}
+
+.countdown_label {
+   font-size: 14px;
+}
+
+@keyframes d {
+   0% {
+      opacity: 0;
+      transform: scale(2)
+   }
+
+   to {
+      opacity: 1;
+      transform: scale(1)
+   }
+}
+
+
+@media all and (max-width: 768px) {
+   h1 {
+      font-size: calc(1.5rem * var(--smaller));
+   }
+
+   li {
+      font-size: calc(1.125rem * var(--smaller));
+   }
+
+   li span {
+      font-size: calc(3.375rem * var(--smaller));
+   }
 }
