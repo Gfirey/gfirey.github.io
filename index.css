@@ -130,6 +130,7 @@
    letter-spacing: 0em;
    line-height: 2.25em;
    text-align: center;
+   min-width: 50px;
 }
 
 .countdown_number {
