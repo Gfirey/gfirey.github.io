@@ -24,15 +24,8 @@
          document.getElementById("seconds").innerText = seconds;
 
          document.getElementById("days_label").innerText = skl(days, ['День', 'Дня', 'Дней']);
-            // (days == 1 || (days > 19 && days % 10 == 1)) ? 'День' :
-            //    ((days > 1 && days < 5) || (days > 19 && days % 10 > 1 && days % 10 < 5)) ? 'Дня' : 'Дней';
-
          document.getElementById("hours_label").innerText = skl(hours, ['Час', 'Часа', 'Часов']);
-            // (hours == 1 || (hours > 19 && hours % 10 == 1)) ? 'час' :
-            //    ((hours > 1 && hours < 5) || (hours > 19 && hours % 10 > 1 && hours % 10 < 5)) ? 'Часа' : 'Часов';
-
          document.getElementById("minutes_label").innerText = skl(minutes, ['Минута', 'Минуты', 'Минут']);
-
          document.getElementById("seconds_label").innerText = skl(seconds, ['Секунда', 'Секунды', 'Секунд']);
       }, 0)
 }());
