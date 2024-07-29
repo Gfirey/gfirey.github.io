@@ -23,6 +23,8 @@
          document.getElementById("minutes").innerText = minutes;
          document.getElementById("seconds").innerText = seconds;
 
+
+
          document.getElementById("days_label").innerText = skl(days, ['День', 'Дня', 'Дней']);
          document.getElementById("hours_label").innerText = skl(hours, ['Час', 'Часа', 'Часов']);
          document.getElementById("minutes_label").innerText = skl(minutes, ['Минута', 'Минуты', 'Минут']);
